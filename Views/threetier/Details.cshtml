@@ -1,0 +1,57 @@
+﻿@model MVC3TIER.Models.TIER.entity_class.dept_cls
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>dept_cls</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.did)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.did)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.dname)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.dname)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.dloc)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.dloc)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.no_of_emp)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.no_of_emp)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.did }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>
